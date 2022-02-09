@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Obsługiwany układ",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -23,7 +23,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Instrukcja",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -31,8 +31,8 @@
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the items - or just having viewed the component",
+          "title": "Kryteria ukończenia",
+          "description": "Czy ukończenie jest oparte na tym, że uczący się obejrzał wszystkie elementy - czy tylko obejrzał komponent",
           "default": "allItems",
           "enum": [
             "inview",
@@ -42,14 +42,14 @@
         },
         "_graphic": {
           "type": "object",
-          "title": "Main graphic",
+          "title": "Główna grafika",
           "default": {},
           "properties": {
             "src": {
               "type": "string",
               "isObjectId": true,
-              "title": "Source",
-              "description": "This is the image that appears behind the pins",
+              "title": "Źródło",
+              "description": "To jest obraz, który pojawia się za pinezkami",
               "_backboneForms": {
                 "type": "Asset",
                 "media": "image"
@@ -57,8 +57,8 @@
             },
             "alt": {
               "type": "string",
-              "title": "Alternative text",
-              "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+              "title": "Tekst alternatywny",
+              "description": "Opis obrazka; wymagany, gdy ma on znaczenie, które musi być przekazane uczącemu się. W przypadku obrazów 'dekoracyjnych' należy pozostawić to pole puste",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -66,8 +66,8 @@
             },
             "attribution": {
               "type": "string",
-              "title": "Attribution",
-              "description": "Text to be displayed as an attribution",
+              "title": "Atrybucja",
+              "description": "Tekst, który ma być wyświetlany jako atrybut",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -77,8 +77,8 @@
         },
         "mobileBody": {
           "type": "string",
-          "title": "Mobile body",
-          "description": "This body text is displayed on mobile devices when this component turns into a Narrative",
+          "title": "Korpus w mobilnych",
+          "description": "Ten tekst jest wyświetlany na urządzeniach mobilnych, gdy ten komponent zamieni się w narrację",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -87,8 +87,8 @@
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
+          "title": "Instrukcja w mobilnych",
+          "description": "Ten tekst instrukcji jest wyświetlany na urządzeniach mobilnych, gdy ten komponent zmienia się w Narrację",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -97,38 +97,38 @@
         },
         "_hidePagination": {
           "type": "boolean",
-          "title": "Hide pagination",
-          "description": "If enabled, the progress indicator and previous and next links will not be shown on the popup toolbar",
+          "title": "Ukryj paginację",
+          "description": "Jeśli opcja ta jest włączona, wskaźnik postępu oraz poprzednie i następne linki nie będą wyświetlane na wyskakującym pasku narzędzi.",
           "default": false
         },
         "_canCycleThroughPagination": {
           "type": "boolean",
-          "title": "Loop items",
-          "description": "If enabled, the popup navigation buttons will cycle continuously through the popup items (i.e. clicking next whilst on the last item will cause the first item to be shown)",
+          "title": "Elementy pętli",
+          "description": "Jeśli opcja ta jest włączona, przyciski nawigacyjne popup będą przełączać się w sposób ciągły przez kolejne elementy popupu (np. kliknięcie przycisku next na ostatnim elemencie spowoduje wyświetlenie pierwszego elementu)",
           "default": false
         },
         "_isNarrativeOnMobile": {
           "type": "boolean",
-          "title": "Replace with Narrative component on mobile",
+          "title": "Zastąp elementem narracyjnym w telefonie komórkowym",
           "description": "If disabled, the Hotgraphic will render a scaled down 'desktop' version (pins over image / tiles) of the component in 'mobile' view instead of being replaced by a Narrative interaction",
           "default": true
         },
         "_useNumberedPins": {
           "type": "boolean",
-          "title": "Use numbered pins",
-          "description": "If enabled, the pin icons will be replaced with the item number. Useful if you want pins to be visited in a set order or show steps in a process",
+          "title": "Użyj ponumerowanych pinów",
+          "description": "Jeśli jest włączona, ikony pinezek zostaną zastąpione numerem elementu. Przydatne, jeśli chcesz, aby piny były odwiedzane w ustalonej kolejności lub pokazywały kroki w procesie",
           "default": false
         },
         "_useGraphicsAsPins": {
           "type": "boolean",
-          "title": "Use grid layout",
-          "description": "If enabled, the main graphic will be hidden and pins will be displayed as images which can be positioned using classes",
+          "title": "Użyj układu siatki",
+          "description": "Po włączeniu tej opcji Główna grafika zostanie ukryta, a piny będą wyświetlane jako obrazki, które można pozycjonować za pomocą klas",
           "default": false
         },
         "_isRound": {
           "type": "boolean",
-          "title": "Use circular popup item images",
-          "description": "If enabled, a 50% border radius will be applied to the items pop up images",
+          "title": "Użyj kolistych obrazów elementów popup",
+          "description": "Jeśli opcja ta jest włączona, do wyskakujących obrazów elementów zostanie zastosowany 50% promień obramowania.",
           "default": false
         },
         "_items": {
@@ -139,8 +139,8 @@
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
-                "description": "Title displayed in the popup",
+                "title": "Tytuł",
+                "description": "Tytuł wyświetlany w okienku wyskakującym",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -148,14 +148,14 @@
               },
               "_ariaLevel": {
                 "type": "number",
-                "title": "Title ARIA level",
-                "description": "ARIA level to assign to the popup title. Leave set to 0 to default to the Notify ARIA level (set via the Accessibility section of the course configuration)",
+                "title": "Poziom ARIA  tytułu (ARIA level)",
+                "description": "Poziom ARIA, który ma być przypisany do wyskakującego tytułu. Pozostaw ustawione na 0, aby domyślnie ustawić poziom Powiadom ARIA (ustawiony w sekcji Dostępność w konfiguracji kursu)",
                 "default": 0
               },
               "body": {
                 "type": "string",
-                "title": "Body",
-                "description": "Body text displayed in the popup",
+                "title": "Treść główna",
+                "description": "Tekst wyświetlany w oknie popup",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -164,8 +164,8 @@
               },
               "strapline": {
                 "type": "string",
-                "title": "Strapline",
-                "description": "Strapline - displayed on mobile version only",
+                "title": "Slogan",
+                "description": "Slogan - wyświetlany tylko w wersji mobilnej",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -173,7 +173,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Grafika",
                 "default": {},
                 "required": [
                   "src"
@@ -182,8 +182,8 @@
                   "src": {
                     "type": "string",
                     "isObjectId": true,
-                    "title": "Source",
-                    "description": "Image to be displayed in a popup when this item is selected",
+                    "title": "Źródło",
+                    "description": "Obrazek, który ma być wyświetlany w wyskakującym okienku po wybraniu tego elementu",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -191,8 +191,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Tekst alternatywny",
+                    "description": "Opis obrazka; wymagany, gdy ma on znaczenie, które musi być przekazane uczącemu się. W przypadku obrazów 'dekoracyjnych' należy pozostawić to pole puste",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -200,8 +200,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution for the popup image",
+                    "title": "Atrybucja",
+                    "description": "Tekst, który ma być wyświetlany jako atrybut dla obrazka okna wyskakującego",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -209,8 +209,8 @@
                   },
                   "_classes": {
                     "type": "string",
-                    "title": "Pin custom classes",
-                    "description": "Allows you to specify custom CSS classes to be applied to the hotgraphic pin or, alternatively, to the hotspot tile when _useGraphicsAsPins is set to true",
+                    "title": "Własna klasa Pin ",
+                    "description": "Umożliwia określenie niestandardowych klas CSS, które mają być zastosowane do pinezki hotgrafiki lub alternatywnie do kafelka hotspotu, gdy _useGraphicsAsPins jest ustawione na true",
                     "default": ""
                   }
                 }
@@ -223,8 +223,8 @@
                   "src": {
                     "type": "string",
                     "isObjectId": true,
-                    "title": "Source",
-                    "description": "This is the pin image, leave blank for default",
+                    "title": "Źródło",
+                    "description": "To jest obraz pinezki, pozostaw puste dla domyślnych ustawień",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -232,8 +232,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Tekst alternatywny",
+                    "description": "Opis obrazka; wymagany, gdy ma on znaczenie, które musi być przekazane uczącemu się. W przypadku obrazów 'dekoracyjnych' należy pozostawić to pole puste",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -243,18 +243,18 @@
               },
               "_classes": {
                 "type": "string",
-                "title": "Popup item custom classes",
-                "description": "Allows you to specify custom CSS classes to be applied to the popup item. Supported classes are 'align-image-left', 'hide-desktop-image', and 'hide-popup-image' which aligns the item image to the left, hides the pop up image in desktop view, and hides the pop up image for all screen sizes respectively",
+                "title": "Własne klasy elementu okna wyskakującego",
+                "description": "Pozwala na określenie niestandardowych klas CSS, które mają być zastosowane do elementu popup. Obsługiwane klasy to 'align-image-left', 'hide-desktop-image' i 'hide-popup-image', które wyrównują obraz elementu do lewej, ukrywają wyskakujący obraz w widoku pulpitu i ukrywają wyskakujący obraz odpowiednio dla wszystkich rozmiarów ekranu.",
                 "default": ""
               },
               "_left": {
                 "type": "number",
-                "title": "Pin horizontal position (%)",
+                "title": "Pozycja pozioma pinezki (%)",
                 "default": 0
               },
               "_top": {
                 "type": "number",
-                "title": "Pin vertical position (%)",
+                "title": "Pozycja pionowa pinezki (%)",
                 "default": 0
               }
             }
